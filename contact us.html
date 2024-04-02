@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    .AB {
+        background-color: transparent;
+        height: 850px;
+        padding-top: 80px;
+        margin-left: 200px;
+    }
+
+    .AB button {
+        background-color: rgb(62, 62, 194);
+        text-decoration-color: white;
+        color: white;
+        padding: 15px 150px 15px 150px;
+        margin-top: 20px;
+    }
+
+    .ab {
+        height: 500px;
+        width: 400px;
+        border: 1px;
+        background-color: transparent;
+        padding-top: 20px;
+        border-radius: 5px;
+    }
+
+    input {
+        background-color: transparent;
+        color: black;
+        border-radius: 3px;
+        padding: 10px 85px 10px 85px;
+    }
+
+    .gh {
+        background-image: url('background.jpg');
+        height: 850px;
+        width: 850px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 300px;
+        padding-bottom: 40px;
+        padding-right: 100px;
+    }
+</style>
+
+<body>
+    <div class="gh">
+        <center>
+            <div class="AB">
+                <div class="ab">
+                    <h1 style="color: rgb(88, 88, 214);">Contact Us</h1>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <center><label style="color: transparent;">First Name</label></center>
+                            <input type="text" id="username" class="input-field" placeholder="First Name" />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <center> <label style="color: transparent; margin-top: 2%">Last Name</label></center>
+                            <input type="text" id="password" class="input-field" placeholder="Last Name" />
+                        </div>
+                        <div class="form-group">
+                            <center> <label style="color: transparent; margin-top: 2%">Email</label></center>
+                            <input type="text" id="password" class="input-field" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <center><label style="color: transparent;">Password</label></center>
+                            <input type="password" id="username" class="input-field" placeholder="Password" />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <center><label style="color: transparent;">Confirm Password</label></center>
+                            <input type="password" id="username" class="input-field" placeholder="Confirm Password" />
+                        </div>
+                        <br>
+                        <button style="border-radius: 4px;" type="button" class="button fancy-button" onclick="checkLogin()">
+                            Contact us
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function checkLogin() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+
+                    if (username === "NANI512" && password === "12345") {
+                        window.location.href = "task02.html";
+                    } else {
+                        alert("Your password are incorrect please enter your.....");
+                    }
+                }
+            </script>
+        </center>
+    </div>
+</body>
+</html>
